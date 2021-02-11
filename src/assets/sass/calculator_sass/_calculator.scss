@@ -1,0 +1,116 @@
+/*************************** 
+       Calculator css
+***************************/
+// .cal-background{
+//     padding: 0;
+//     margin: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     background: linear-gradient(to right, #00AAFF,#00FF6C);
+// }
+
+// .calculator-grid{
+//     // margin-top: 4%;
+//     display: grid;
+//     justify-content: center;
+//     align-content: center;
+//     min-height: 100vh;
+//     grid-template-columns: repeat(4,75px);
+//     grid-template-rows: minmax(120px,auto) repeat(5,75px)
+// }
+// .calculator-grid > button{
+// cursor: pointer;
+// font-size: 1.5rem;
+// border: 1px solid white;
+// outline: none;
+// background-color: rgba(255,255,255,0.75);
+// }
+// .calculator-grid > button:hover{
+//     background-color: rgba(255,255,255,0.9);
+// }
+// .span-two{
+//     grid-column: span 2;
+// }
+// .output{
+//     grid-column: 1/-1;
+//     background-color: rgba(0,0,0,0.75);
+//     color: white;
+//     display: flex;
+//     align-items: flex-end;
+//     justify-content: space-around;
+//     flex-direction: column;
+//     padding: 10px;
+//     word-wrap: break-word;
+//     word-break: break-all;
+// }
+// .output .previous-operand{
+//     color: rgba(255,255,255,0.75);
+//     font-size: 1.5rem;
+// }
+// .output .current-operand{
+//     color: white;
+//     font-size: 1.5rem;
+//     }
+.main-calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+
+}
+.calc-wrapper {
+    margin-top: 80px;
+    width: 400px;
+    text-align: -webkit-center;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+  }
+    /*************************** 
+       SmallComponents css
+    ***************************/
+.main-input {
+    height: 4em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5em;
+    outline: 1px solid #888888;
+  }
+  .clear-btn {
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    font-size: 1.4em;
+    background-color: #c5c3cd;
+    color: #000000;
+    flex: 1;
+    outline: 1px solid #888888;
+  }
+  .button-wrapper {
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    font-size: 1.4em;
+    background-color: #e0e1e6;
+    color: #888888;
+    flex: 1;
+    outline: 1px solid #888888;
+  }
+  
+  .operator {
+    background-color: #fe9241;
+    color: #ffffff;
+  }
+  

@@ -1,0 +1,59 @@
+.main-reactConatiner{
+    margin-top: 3%;
+   
+    
+    .card{
+        width: 15rem;
+        // height: 400px;
+        border: none;
+        box-shadow: 1px 1px 5px rgb(136, 135, 135);
+        .icon-div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            .edit-icon{
+              
+                width: 30px;
+                height: 30px;
+                background-color: orange;
+                color: black;
+                text-align: center;
+                border-radius: 15px;
+                position: absolute;
+                top: -14px;
+                left: -14px;
+    
+            }
+            .delete-icon{
+                width: 30px;
+                height: 30px;
+                background-color: orange;
+                color: black;
+                text-align: center;
+                border-radius: 15px;
+                position: absolute;
+                top: -14px;
+                right: -14px;
+            }
+        }
+        .card-body{
+            .card-title{
+                font-size: 18px;
+            }
+            .card-text{
+                font-size: 12px;
+            }
+            .view-button{
+                color: white;
+                border: none;
+                background-image: linear-gradient(to bottom right, red, yellow)
+            }
+            .view-button:focus{
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+    
+}

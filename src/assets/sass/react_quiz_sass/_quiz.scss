@@ -1,0 +1,216 @@
+    /*************************** 
+        React Quiz Home Css
+*******************************/
+.main_quizContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    section{
+        h1{
+            color: white;
+        }
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        height: 80%;
+        width: 30%;
+        padding: 2rem;
+        margin-top: 8rem;
+        border-radius: 10px;
+        box-shadow: 2px 3px 5px black       
+    }
+    .play-button-container{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        .play-button{
+        width: 100%;
+        height: 40px;
+        background-color: green;
+        color: white;
+        border-radius: 20px;
+        border: none;
+      
+        }
+        .play-button:focus{
+            outline: none ;
+            box-shadow: none ;
+        }
+        .play-button:hover{
+            background-color: darken(green , 10%);
+        }
+        
+    }
+    
+    .auth-container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        .login-button{
+            width: 150px;
+            height: 40px;    
+            background-color: blur;
+            color: black;
+            border-radius: 20px;
+            border: none;
+            
+           
+        }
+        .signup-button{
+            width: 150px;
+            height: 40px;    
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            border: none;
+            
+        }
+        .login-button:focus{
+            outline: none;
+            box-shadow: none ;
+        }
+        .signup-button:focus{
+            outline: none;
+            box-shadow: none ;
+        }
+       
+    }
+ }
+
+/*************************** 
+        Quiz Page Css
+***************************/
+
+ .main_quizpageContainer{
+     margin-top: 4rem;
+      font-family: 'Quicksand', sans-serif;
+    .questions{
+        background-color: rgba($color: gray, $alpha: 0.1);
+        border-left: 5px solid blue;
+        width: 80%;
+        padding: 15px;
+        margin: 0 auto;
+        margin-top: 8rem;
+        box-shadow: 1px 1px 5px gray;
+
+        h2{
+            text-align: center;
+           
+        }
+        .lifeline-container{
+            display: flex;
+            justify-content: space-between;
+            .icon{
+                color: green;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+            .icon:hover{
+                background: none;
+                color: darken(orange,10%);
+            }
+        }
+        h5{
+            font-size: 1.5rem;
+            line-height: 1.5;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .options-container{
+            display: flex;
+            justify-content: space-between;
+            .option{
+                background-color: rgba($color: blue, $alpha: 0.6);
+                color: white;
+                border-radius: 20px;
+                cursor: pointer;
+                margin: 10px auto;
+                padding: 5px;
+                transition: 0.3s all;
+                text-align: center;
+                width: 45%;
+                box-shadow: 3px 2px 5px gray;
+            }
+            .option:hover{
+                background-color: rgba($color: blue, $alpha: 20%);
+            }
+        }
+        .button-container{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto 10px auto;
+            width: 80%;
+            padding-top: 25px;
+            button{
+                border: none;
+                color: white;
+                cursor: pointer;
+                margin-right: 25px;
+                padding: 5px 15px ;
+
+            }
+            .disable{
+                pointer-events: none !important;
+                background-color: gray !important;
+                box-shadow: none !important;
+                opacity: 0.9;
+
+            }
+        }
+        .button-container button:first-child{
+            background-color: darken(blue,5%);
+            box-shadow: 3px 2px 5px gray;
+            transition: 0.2s linear all;
+        }
+        .button-container button:first-child:hover{
+            background-color: darken(blue,20%);
+        }
+        .button-container button:nth-child(2){
+            background-color: darken(green,5%);
+            box-shadow: 3px 2px 5px gray;
+            transition: 0.2s linear all;
+        }
+        .button-container button:nth-child(2):hover{
+            background-color: darken(green,20%);
+        }
+        .button-container button:last-child{
+            background-color: darken(red,5%);
+            box-shadow: 3px 2px 5px gray;
+            transition: 0.2s linear all;
+        }
+        .button-container button:last-child:hover{
+            background-color: darken(red,20%);
+        }
+        .toast-invalid{
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+        }
+        .toast-valid{
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+ }
+
+ /*************************** 
+        Quiz summary page Css
+***************************/
+.summary{
+    text-align: center;
+    h1{
+        color: green;
+    }
+    .icon{
+        color: green;
+    }  
+        .right{
+    margin-left: 30px;
+    }
+    button{
+        border: 1px solid green;
+        color: green;
+        padding: 0px 5px;
+        margin: 5px;
+    }
+  
+}
+  

@@ -1,0 +1,59 @@
+
+
+// .main-header {
+//     position: relative; 
+//     height: 100vh;
+//     width: 100%;
+//     text-align: center;
+//     .left-img{
+//       width: 50%;
+//       height: 100vh;
+//     }
+   
+// h1 {
+//   position: relative;
+//   color: #ffffff;  
+//   font-size: 8rem;
+//   text-align: center;
+// }
+// p{
+//     position: relative;
+//   color: #ffffff;  
+//   font-size: 5rem;
+//   text-align: center;
+// }
+// }
+
+// .main-header::before {    
+//       content: "";
+//       // background-image: url('https://source.unsplash.com/collection/ZMraoOybTLQ/1600x900');
+//     //   background-image: url('https://placekitten.com/1200/800');
+  
+
+//       background-size: cover;
+//       position: absolute;
+//       top: 0px;
+//       right: 0px;
+//       bottom: 0px;
+//       left: 0px;
+//       opacity: 0.75;
+// }
+
+.main-header{
+
+  .left-img{
+      
+           height: 100vh;
+         }
+         p{
+           color: white;
+       
+         }
+         h1{
+           color: white;
+         }
+         .right-content{
+            padding: 100px;
+            background-color: rgba($color: #000000, $alpha: 0.7);
+         }
+}
