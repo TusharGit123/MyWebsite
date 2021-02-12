@@ -3,14 +3,17 @@ import { Helmet } from "react-helmet";
 import myImage from "../../assets/images/pic2.jpeg";
 import myImageTwo from "../../assets/images/pic3.JPG";
 import serviceBackground from "../../assets/images/home-background3.jpg";
-import portfolio1 from "../../assets/images/background6.jpg";
-import portfolio2 from "../../assets/images/home-background2.jpg";
-import portfolio3 from "../../assets/images/home-background.jpg";
+// import portfolio1 from "../../assets/images/background6.jpg";
+// import portfolio2 from "../../assets/images/home-background2.jpg";
+// import portfolio3 from "../../assets/images/home-background.jpg";
 import websitedev from "../../assets/images/icons/websitedev.svg";
 import appdev from "../../assets/images/icons/appdev.svg";
 import mobiledev from "../../assets/images/icons/mobiledev.svg";
 import Download from "../../assets/images/icons/download.svg";
 import ResumePdf from "../../assets/images/Resume1.pdf";
+import quiz from "../../assets/images/Quizapp.jpg";
+import reduxposts from "../../assets/images/react-redux.jpg";
+import calculator from "../../assets/images/calculator.jpg";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
@@ -63,17 +66,17 @@ const HeaderSection = () => {
           </a>
         </li>
 
-        {/* <li className="nav-item">
+        <li className="nav-item">
           <a href="#miniproject" className="nav-link">
             Mini Projects
           </a>
-        </li> */}
+        </li>
 
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a href="#work" className="nav-link">
             My Work
           </a>
-        </li>
+        </li> */}
 
         <li className="nav-item">
           <a href="#contact" className="nav-link">
@@ -187,39 +190,24 @@ const AboutSection = () => {
   );
 };
 
-const WorkSection = () => {
+const MiniProjectSection = () => {
   return (
     <>
-      <section className="my-work" id="work">
-        <h2 className="section-title section-title-work">My Work</h2>
-        <p className="section-subtitle section-subtitle-work">
+      <section className="my-work" id="miniproject">
+        <h2 className="section-title section-title-work">Mini Projects</h2>
+        {/* <p className="section-subtitle section-subtitle-work">
           A selection of my range of work
-        </p>
+        </p> */}
 
         <div className="portfolio">
-          <Link to="#" className="portfolio-item">
-            <img src={portfolio1} alt="my_img" className="portfolio-img" />
+          <Link to="/quiz" className="portfolio-item">
+            <img src={quiz} alt="my_img" className="portfolio-img" />
           </Link>
-          <Link to="#" className="portfolio-item">
-            <img src={portfolio2} alt="my_img" className="portfolio-img" />
+          <Link to="/reactRedux" className="portfolio-item">
+            <img src={reduxposts} alt="my_img" className="portfolio-img" />
           </Link>
-          <Link to="#" className="portfolio-item">
-            <img src={portfolio3} alt="my_img" className="portfolio-img" />
-          </Link>
-          <Link to="#" className="portfolio-item">
-            <img src={portfolio1} alt="my_img" className="portfolio-img" />
-          </Link>
-          <Link to="#" className="portfolio-item">
-            <img src={portfolio2} alt="my_img" className="portfolio-img" />
-          </Link>
-          <Link to="#" className="portfolio-item">
-            <img src={portfolio3} alt="my_img" className="portfolio-img" />
-          </Link>
-          <Link to="#" className="portfolio-item">
-            <img src={portfolio1} alt="my_img" className="portfolio-img" />
-          </Link>
-          <Link to="#" className="portfolio-item">
-            <img src={portfolio2} alt="my_img" className="portfolio-img" />
+          <Link to="/calculator" className="portfolio-item">
+            <img src={calculator} alt="my_img" className="portfolio-img" />
           </Link>
         </div>
       </section>
@@ -414,14 +402,14 @@ const MyWebsite = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>My Website</title>
+        <title>Tushar Rathod Web Developer</title>
       </Helmet>
 
       {HeaderSection()}
       {IntroSection()}
       {ServiceSection()}
       {AboutSection()}
-      {WorkSection()}
+      {MiniProjectSection()}
       {ContactSection()}
       {FooterSection()}
     </Fragment>

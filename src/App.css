@@ -799,6 +799,7 @@
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 2em;
 }
 
 .portfolio .portfolio-item {
@@ -1056,7 +1057,9 @@ html {
 }
 
 body {
-  background: var(--clr-light);
+  background-color: #00DBDE;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00DBDE), to(#FC00FF));
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
