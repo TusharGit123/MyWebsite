@@ -205,6 +205,11 @@
         opacity: .75;
     }
 }
+@media screen and (max-width:768px){
+    .portfolio {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
 
 /********* Contact Section ********/
 .contact {

@@ -6,7 +6,7 @@ import { deletePost } from "../../redux/actions/postAction";
 const PostCard = ({ postItem }) => {
   const dispatch = useDispatch();
   return (
-    <div className="col-3 mb-4" key={postItem.id}>
+    <div className="col-md-3 col-sm-3 col-lg-3 mb-4" key={postItem.id}>
       <div className="card">
         <div className="icon-div">
           <Link to={`/updatepost/${postItem.id}`} className="edit-icon">
