@@ -6,7 +6,7 @@ export const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <Link to="/" className="navbar-brand">
-          My Projects
+          My Website
         </Link>
 
         <ul className="navbar-nav ml-auto">
