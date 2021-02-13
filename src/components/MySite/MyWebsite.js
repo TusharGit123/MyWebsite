@@ -14,6 +14,7 @@ import ResumePdf from "../../assets/images/Resume1.pdf";
 import quiz from "../../assets/images/Quizapp.jpg";
 import reduxposts from "../../assets/images/react-redux.jpg";
 import calculator from "../../assets/images/calculator.jpg";
+// import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
@@ -40,6 +41,7 @@ const HeaderSection = () => {
   return (
     <nav className="main-navbar">
       <div className="logo">
+        {/* <img src={logo} alt="logo" style={{ width: "80px" }} /> */}
         <h3 style={{ color: "var(--clr-accent)" }}>Logo</h3>
       </div>
 
@@ -228,7 +230,9 @@ const ContactSection = () => {
     //   email,
     //   message,
     // };
+
     // console.log(formData);
+    // clearing the values
 
     emailjs
       .sendForm(
@@ -245,7 +249,9 @@ const ContactSection = () => {
           console.log(error.text);
         }
       );
-    e.target.reset();
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -253,7 +259,7 @@ const ContactSection = () => {
       <section className="contact" id="contact">
         <div className="sub-contact">
           <h2 className="sub-contact-title">Get in Touch</h2>
-          <form onSubmit={onSubmit}>
+          <form onSubmit={onSubmit} id="contactform">
             <div className="form-group">
               <input
                 id="name"
