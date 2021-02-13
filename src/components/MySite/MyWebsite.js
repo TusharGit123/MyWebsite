@@ -150,7 +150,7 @@ const ServiceSection = () => {
               </p>
             </div>
           </div>
-          <a href="#work" className="btn main-button">
+          <a href="#miniproject" className="btn main-button">
             My Work
           </a>
         </div>
