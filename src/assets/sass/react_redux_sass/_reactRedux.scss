@@ -1,6 +1,6 @@
 .main-reactConatiner{
     margin-top: 3%;
-   
+    text-align: -webkit-center;
     
     .card{
         width: 15rem;
@@ -56,4 +56,9 @@
         }
     }
     
+}
+@media screen and  (min-width: 768px){
+    .main-reactConatiner{
+        text-align: -webkit-center;
+    }
 }
