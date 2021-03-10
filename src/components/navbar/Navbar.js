@@ -6,6 +6,7 @@ export const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <Link to="/" className="navbar-brand">
+          <i className="fa fa-hand-o-left mr-2"></i>
           My Website
         </Link>
 

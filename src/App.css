@@ -457,6 +457,7 @@
 
 .main-reactConatiner {
   margin-top: 3%;
+  text-align: -webkit-center;
 }
 
 .main-reactConatiner .card {
@@ -522,6 +523,12 @@
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-reactConatiner {
+    text-align: -webkit-center;
+  }
 }
 
 /*************************** 
