@@ -39,7 +39,13 @@ const HeaderSection = () => {
     <nav className="main-navbar">
       <div className="logo">
         {/* <img src={logo} alt="logo" style={{ width: "80px" }} /> */}
-        <h3 style={{ color: "var(--clr-accent)" }}>Logo</h3>
+
+        <h3
+          style={{ color: "var(--clr-accent)", fontWeight: "var(--fw-bold)" }}
+        >
+          Tushar Rathod
+        </h3>
+        <h6 style={{ fontSize: "12px", float: "right" }}>Web Developer</h6>
       </div>
 
       <div className="menu-icon" onClick={(e) => setClick(!clicked)}>
