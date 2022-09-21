@@ -177,7 +177,7 @@ const AboutSection = () => {
             Hi, My name is Tushar Rathod. I am a
             <span style={{ color: "var(--clr-accent" }}> Web Developer </span>
             and i have an experience of
-            <span style={{ color: "var(--clr-accent" }}> 1.6 years </span>in
+            <span style={{ color: "var(--clr-accent" }}> 2.4 years </span>in
             React Js and React Native. I specialises at building pixel perfect
             reusable components with effecient coding practices.
           </p>
